@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import './App.css'
 import SVG from './SVG';
 import Sidenav from './Sidenav';
+import Header from './Header';
 
 class App extends Component {
   render() {
@@ -12,9 +13,12 @@ class App extends Component {
             <div className="container">
               <div className="row">
               <Sidenav />
+                <div className="col-desktop-8">
+                <Header name="Blissy" initials="JB"/>
 
-              {/* TO-DO */}
+                  {/* TO-DO */}
 
+                </div>
               </div>
             </div>
           </div>
