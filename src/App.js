@@ -1,4 +1,7 @@
-import React from 'react'
+import React from 'react';
+import './App.css';
+import './images/gradient-background.jpg';
+
 import {
   BrowserRouter as Router,
   Route,
