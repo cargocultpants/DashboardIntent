@@ -7,6 +7,15 @@ class App extends Component {
     return (
       <div>
         <SVG />
+          <div id="pagewrapper">
+            <div class="container">
+              <div class="row">
+
+              // TO-DO //
+
+              </div>
+            </div>
+          </div>
       </div>
     );
   }
