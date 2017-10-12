@@ -15,14 +15,14 @@ class App extends Component {
           <div id="pagewrapper">
             <div className="container">
               <div className="row">
-              <Sidenav />
-                <div className="col-desktop-8">
-                <Header name="Blissy" initials="JB"/>
-                <Graph />
-                <Users />
-                <Content />
+                <Sidenav />
+                  <div className="col-desktop-8">
+                    <Header name="Blissy" initials="JB"/>
+                    <Graph />
+                    <Users />
+                    <Content />
 
-                  {/* TO-DO */}
+                            {/* TO-DO */}
 
                 </div>
               </div>
