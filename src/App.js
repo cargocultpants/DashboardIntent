@@ -16,11 +16,11 @@ class App extends Component {
             <div className="container">
               <div className="row">
                 <Sidenav />
-                  <div className="col-desktop-8">
-                    <Header name="Blissy" initials="JB"/>
-                    <Graph />
-                    <Users />
-                    <Content />
+                <div className="col-desktop-8">
+                  <Header name="Blissy" initials="JB"/>
+                  <Graph />
+                  <Users />
+                  <Content />
 
                             {/* TO-DO */}
 
