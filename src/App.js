@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
-import './App.css';
+import './App.css'
 import SVG from './SVG';
+import Sidenav from './Sidenav';
 
 class App extends Component {
   render() {
@@ -8,10 +9,11 @@ class App extends Component {
       <div>
         <SVG />
           <div id="pagewrapper">
-            <div class="container">
-              <div class="row">
+            <div className="container">
+              <div className="row">
+              <Sidenav />
 
-              // TO-DO //
+              {/* TO-DO */}
 
               </div>
             </div>

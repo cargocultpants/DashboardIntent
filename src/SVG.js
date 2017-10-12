@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class SVG extends Component {
   render() {
     return (
-      <div class="is-hidden">
+      <div className="is-hidden">
         <svg xmlns="http://www.w3.org/2000/svg">
           <symbol id="odin" viewBox="0 0 500 297">
           <title>odin</title>
