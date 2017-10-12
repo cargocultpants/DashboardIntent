@@ -11,7 +11,7 @@ class Content extends Component {
                 <h2>Content</h2>
               </header>
               <div className="o-pane__contents">
-                <h1></h1>
+                <h1>Headings must have content and the content must be accessible by a screen reader.</h1>
                 <p></p>
               </div>
             </section>
