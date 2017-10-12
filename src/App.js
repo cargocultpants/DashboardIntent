@@ -3,7 +3,9 @@ import './App.css'
 import SVG from './SVG';
 import Sidenav from './Sidenav';
 import Header from './Header';
-import Graph from './Graph'
+import Graph from './Graph';
+import Users from './Users';
+import Content from './Content';
 
 class App extends Component {
   render() {
@@ -17,6 +19,8 @@ class App extends Component {
                 <div className="col-desktop-8">
                 <Header name="Blissy" initials="JB"/>
                 <Graph />
+                <Users />
+                <Content />
 
                   {/* TO-DO */}
 
