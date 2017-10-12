@@ -1,12 +1,19 @@
 {
-  "name": "my-app",
+  "name": "DashboardIntent",
   "version": "0.1.0",
   "private": true,
+  "description": "Repository for Client",
+  "main": "index.js",
+  "repository": {
+    "url": "https://github.com/smtlb/DashboardIntent",
+    "type": "git"
+  },
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-scripts": "1.0.13"
   },
+  "author": "Shannon Matloob <smtlb90@gmail.com>",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
