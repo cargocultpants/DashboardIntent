@@ -3,7 +3,7 @@ import './App.css'
 import SVG from './SVG';
 import Sidenav from './Sidenav';
 import Header from './Header';
-import Graph from './Graph';
+import Main from './Main';
 import Users from './Users';
 import Content from './Content';
 
@@ -18,7 +18,7 @@ class App extends Component {
                 <Sidenav />
                 <div className="col-desktop-8">
                   <Header name="Blissy" initials="JB"/>
-                  <Graph />
+                  <Main />
                   <Users />
                   <Content />
 
