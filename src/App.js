@@ -3,7 +3,7 @@ import './App.css'
 import SVG from './SVG';
 import Sidenav from './Sidenav';
 import Header from './Header';
-import Tabs from './Tabs';
+import Tabs, {tabList} from './Tabs';
 
 class App extends Component {
   render() {
@@ -16,7 +16,7 @@ class App extends Component {
                 <Sidenav />
                 <div className="col-desktop-8">
                   <Header name="Blissy" initials="JB"/>
-                  <Tabs />
+                  <Tabs tabList={tabList}/>
 
                             {/* TO-DO */}
 
