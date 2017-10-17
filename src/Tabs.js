@@ -1,4 +1,7 @@
 import React from 'react';
+import Main from './Main';
+import Users from './Users';
+import Content from './Content';
 
 function Tabs(props) {
   const tablist = props.tabList.map(tab =>
@@ -10,8 +13,7 @@ function Tabs(props) {
               <h2 id="tabs-target-id">{tab.id}</h2>
             </header>
             <div className={"o-pane--" + tab.id}>
-              <h1>Headings must have content and the content must be accessible by a screen reader.</h1>
-              <p></p>
+              {tab.component}
             </div>
           </section>
         </div>
@@ -27,12 +29,15 @@ function Tabs(props) {
 export const tabList = [{
   id: 'main',
   color: 'yellow',
+  component: <Main />
 }, {
   id: 'users',
   color: 'blue',
+  component: <Users />
 }, {
   id: 'content',
   color: 'green',
+  component: <Content />
 }];
 
 export default Tabs;

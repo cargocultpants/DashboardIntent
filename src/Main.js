@@ -1,23 +1,28 @@
 import React, {Component} from 'react';
+import {
+  BrowserRouter as Router,
+  Route,
+  Link
+} from 'react-router-dom';
+import Users from './Users';
+import Content from './Content';
 
 class Main extends Component {
   render() {
     return (
-      <div className="tabs-target is-active" id="main">
-        <div className="row">
-          <div className="col-desktop-12">
-            <section className="o-pane--yellow">
-              <header><span className="o-pane__dot"></span>
-                <h2>Main</h2>
-              </header>
-              <div className="o-pane__contents">
-                <h1>Headings must have content and the content must be accessible by a screen reader.</h1>
-                <p></p>
-              </div>
-            </section>
-          </div>
+      <Router>
+        <div>
+          <nav className="o-menu">
+            <ul className="o-menu__links">
+              <li><Link to="/users">Users</Link></li>
+              <li><Link to="/content">Content</Link></li>
+            </ul>
+          </nav>
+
+          <Route path="/users" component={Users}/>
+          <Route path="/content" component={Content}/>
         </div>
-      </div>
+      </Router>
     );
   }
 }
