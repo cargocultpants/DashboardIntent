@@ -13,9 +13,9 @@ class App extends Component {
           <div id="pagewrapper">
             <div className="container">
               <div className="row">
+              <Header name="Blissy" initials="JB"/>
                 <Sidenav />
                 <div className="col-desktop-8">
-                  <Header name="Blissy" initials="JB"/>
                   <Tabs tabList={tabList}/>
 
                             {/* TO-DO */}

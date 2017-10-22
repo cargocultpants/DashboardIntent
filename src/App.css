@@ -426,7 +426,7 @@ a
 {
     float: left;
 
-    width: 100%;
+    /*width: 100%;*/
     padding-right: 10px;
     padding-left: 10px;
 }
@@ -504,6 +504,7 @@ a
 .col-8
 {
     width: 66.66667%;
+    width: 100;
 }
 
 .col-offset-8
@@ -1312,7 +1313,7 @@ a
 
 .o-menu__logo
 {
-    display: block;
+    display: inline-block;
 
     margin-bottom: 40px;
     padding: 0 40px;
