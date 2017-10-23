@@ -3,7 +3,6 @@ import './App.css'
 import SVG from './SVG';
 import Sidenav from './Sidenav';
 import Header from './Header';
-import Graph from './Graph'
 
 class App extends Component {
   render() {
@@ -16,7 +15,6 @@ class App extends Component {
               <Sidenav />
                 <div className="col-desktop-8">
                 <Header name="Blissy" initials="JB"/>
-                <Graph />
 
                   {/* TO-DO */}
 
