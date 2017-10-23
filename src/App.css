@@ -107,6 +107,8 @@ nav,
 section
 {
     display: block;
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
 }
 
 body
@@ -141,7 +143,7 @@ table
     border-collapse: collapse;
 }
 
-h1,
+/*h1,
 .h1,
 h2,
 .h2,
@@ -152,9 +154,9 @@ h4,
 h5,
 .h5,
 h6,
-.h6
+.h6*/
 {
-    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 500;
 
     text-transform: uppercase;
@@ -233,7 +235,7 @@ img
 
 body
 {
-    font-family: Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-weight: 400;
     line-height: 1.65;
 
@@ -549,12 +551,12 @@ a
     margin-left: 100%;
 }
 
-.col-desktop-small,
+/*.col-desktop-small,
 .col-desktop-large
 {
     padding-right: 10px;
     padding-left: 10px;
-}
+}*/
 
 .fs-0
 {
@@ -1318,8 +1320,9 @@ a
 
 .o-menu__links
 {
-    font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
+
 
 .o-menu__links li
 {
@@ -1337,12 +1340,13 @@ a
     border-bottom: 1px solid #323c3d;
 }
 
-.o-menu__links a.is-active
+.o-menu__links a:target
 {
     font-weight: 700;
 }
 
-.o-menu__links a.is-active::before
+
+.o-menu__links a:target::before
 {
     position: absolute;
     top: 0;
@@ -1484,16 +1488,12 @@ a
     text-transform: uppercase;
 }
 
-.o-pane--yellow nav a.is-active,
-.o-pane--blue nav a.is-active,
-.o-pane--green nav a.is-active
+.col-desktop-12 section:target
 {
     text-shadow: 1px 0 0 currentColor;
 }
 
-.o-pane--yellow nav a.is-active::before,
-.o-pane--blue nav a.is-active::before,
-.o-pane--green nav a.is-active::before
+.col-desktop-12 section:target::before
 {
     position: absolute;
     bottom: 0;
@@ -1509,9 +1509,7 @@ a
     background-color: #f5d74c;
 }
 
-.o-pane--yellow nav a.is-active:nth-child(2)::before,
-.o-pane--blue nav a.is-active:nth-child(2)::before,
-.o-pane--green nav a.is-active:nth-child(2)::before
+.col-desktop-12 section:target::before
 {
     background-color: #8ed3d3;
 }
@@ -1551,7 +1549,7 @@ a
 .o-pane--blue .o-pane__contents,
 .o-pane--green .o-pane__contents
 {
-    font-family: Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 13px;
 
     padding-top: 25px;
@@ -1604,7 +1602,13 @@ select::-ms-expand
     display: none;
 }
 
-.tabs-target.is-active
+#tabs-target-id h2, .o-header__title
+{
+    text-transform: uppercase;
+}
+
+
+.tabs-target:target
 {
     display: block;
 }
@@ -1742,14 +1746,14 @@ select::-ms-expand
         margin-left: 100%;
     }
 
-    .col-desktop-small
+    /*.col-desktop-small
     {
         float: left;
 
         width: 37.5%;
         padding-right: 10px;
         padding-left: 10px;
-    }
+    }*/
 
     .col-desktop-large
     {
@@ -2369,3 +2373,10 @@ select::-ms-expand
 }
 
 /*# sourceMappingURL=main.css.map */
+
+/*Shannon's Additions*/
+
+div.col-desktop-12 h1 {
+  font-size: 2rem;
+  font-style: normal;
+}
