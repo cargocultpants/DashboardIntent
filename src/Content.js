@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import ContentView from './ContentView';
+import Canvas from './Canvas';
 
 class Content extends Component {
   render() {
@@ -8,7 +8,7 @@ class Content extends Component {
       <a className="o-menu__logo" href="/content">
         <h3>Content</h3>
       </a>
-      <ContentView />
+      <Canvas name="Shannon" />
       </div>
     );
   }
